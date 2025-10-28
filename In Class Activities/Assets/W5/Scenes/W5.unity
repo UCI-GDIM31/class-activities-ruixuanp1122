@@ -2044,7 +2044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CatW5
   _flipWSControls: 1
   _moveSpeed: 2.5
-  _turnSpeed: 100
+  _turnSpeed: 80
   _animator: {fileID: 1977093712}
 --- !u!1 &2006602745
 GameObject:
