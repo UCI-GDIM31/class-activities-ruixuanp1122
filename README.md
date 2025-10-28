@@ -27,3 +27,11 @@ Line 25: _rigidBody is a Component of type Rigidbody. This line is setting the l
 ### Activity 2: Table#5
 I add my Rigidbodies to the ball and the cat, and only check the goal as in trigger. I gave the Cat a Rigidbody so it could interact with the ball physically but still be controlled smoothly by the player. The SoccerBall with a Rigidbody could respond to gravity, collisions, and bouncing naturally. The Goal’s BoxCollider was set as a trigger because I wanted the ball to pass through it while still detecting when a goal was made.
 My cat rotated in the sky when it hit the ball at first. Then I freeze the rotation of the x-axis and z-axis, so it could move along the right direction. Moreover, the ball didn’t react when entering the goal. I realized it was because the Goal’s collider didn’t have Is Trigger enabled and the tag “Goal” wasn’t assigned. After fixing those two things, the game works perfectly. 
+
+### W5
+### Activity 1：
+My question is about the page 13 on the Week 5 pre-learning slide. My question is that what does if (ball != null) mean in this code? And now I know that GetComponent<BallW3>() returns a reference to the BallW3 component if it exists on the collided GameObject. If that object actually has the script, it gives us a reference to it. But if it doesn’t, Unity gives us null, which basically means “nothing there.” So if (ball != null) is just checking, “hey, did we actually find a BallW3 script or not?”
+### Activity 2: 
+The member variables I need for the DeerW5: I plan to use the transform to change the position and rotation of the deer to let it walk, and directly to walk to the position of the object.
+The methods the DeerW5 class need: I think we need the methods of starts() to start the game, and use updates() to change the direction and way. 
+what should the methods do: I plan to use Call GetComponent<NavMeshAgent>() to get the NavMeshAgent on the same Deer GameObject and store it in _agent. And also use agent to set the destination to the target’s position by calling _agent.SetDestination(_target.position);
